@@ -64,8 +64,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">info@rita-ai.com</p>
-                    <p className="text-gray-600">support@rita-ai.com</p>
+                    <p className="text-gray-600">santhosh.raman@rita-ai.com</p>
                   </div>
                 </div>
 
@@ -87,7 +86,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Business Inquiries</h3>
                     <p className="text-gray-600">For partnerships and investment opportunities</p>
-                    <p className="text-gray-600">business@rita-ai.com</p>
+                    <p className="text-gray-600">santhosh.raman@rita-ai.com</p>
                   </div>
                 </div>
               </div>
