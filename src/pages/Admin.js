@@ -6,6 +6,7 @@ const Admin = () => {
   const [password, setPassword] = useState('');
   const [adminKey, setAdminKey] = useState('');
   const [submissions, setSubmissions] = useState([]);
+  const [unreadCount, setUnreadCount] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -61,6 +62,7 @@ const Admin = () => {
       
       const data = await response.json();
       setSubmissions(data.submissions || []);
+      setUnreadCount(data.unread_count || 0);
     } catch (err) {
       console.error('Error fetching submissions:', err);
       setError(err.message);
@@ -127,8 +129,17 @@ const Admin = () => {
       {/* Header */}
       <div className="bg-gradient-to-br from-brand-plum to-brand-wine text-white py-8">
         <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-3xl font-bold mb-2">Contact Form Submissions</h1>
-          <p className="text-brand-lavender/90">Admin Dashboard</p>
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-3xl font-bold mb-2">Contact Form Submissions</h1>
+              <p className="text-brand-lavender/90">Admin Dashboard</p>
+            </div>
+            {unreadCount > 0 && (
+              <div className="bg-white/20 backdrop-blur px-4 py-2 rounded-full">
+                <span className="text-lg font-bold">{unreadCount} NEW</span>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
@@ -194,12 +205,17 @@ const Admin = () => {
         ) : submissions.length > 0 ? (
           <div className="space-y-4">
             {submissions.map((submission) => (
-              <div key={submission.id} className="bg-white rounded-xl shadow-md p-6">
+              <div key={submission.id} className={`bg-white rounded-xl shadow-md p-6 ${!submission.is_read ? 'border-2 border-brand-wine' : ''}`}>
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-lg font-semibold text-brand-plum mb-1">
-                      {submission.subject}
-                    </h3>
+                    <div className="flex items-center gap-2 mb-1">
+                      {!submission.is_read && (
+                        <span className="bg-brand-wine text-white text-xs font-bold px-2 py-1 rounded">NEW</span>
+                      )}
+                      <h3 className="text-lg font-semibold text-brand-plum">
+                        {submission.subject}
+                      </h3>
+                    </div>
                     <div className="flex items-center gap-4 text-sm text-gray-600">
                       <span className="flex items-center gap-1">
                         <User size={14} />
