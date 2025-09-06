@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ExternalLink } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
     { path: '/', label: 'Home' },
@@ -27,16 +28,23 @@ const Navigation = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-10">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="text-brand-plum hover:text-brand-wine font-sans font-medium transition-colors relative group"
-              >
-                {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-wine transition-all group-hover:w-full"></span>
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`${
+                    isActive ? 'text-brand-wine' : 'text-brand-plum hover:text-brand-wine'
+                  } font-sans font-medium transition-colors relative group`}
+                >
+                  {link.label}
+                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-brand-wine transition-all ${
+                    isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
+                </Link>
+              );
+            })}
             <a
               href="https://smartspoon.rita-ai.com"
               target="_blank"
@@ -62,16 +70,23 @@ const Navigation = () => {
       {isOpen && (
         <div className="md:hidden bg-brand-cream border-t border-brand-lavender/30">
           <div className="px-2 pt-4 pb-4 space-y-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="block px-4 py-3 text-brand-purple-dark hover:text-brand-wine hover:bg-brand-lavender/20 rounded-xl font-body font-medium transition-all"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`block px-4 py-3 ${
+                    isActive 
+                      ? 'text-brand-wine bg-brand-lavender/20' 
+                      : 'text-brand-plum hover:text-brand-wine hover:bg-brand-lavender/20'
+                  } rounded-xl font-sans font-medium transition-all`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
             <a
               href="https://smartspoon.rita-ai.com"
               target="_blank"

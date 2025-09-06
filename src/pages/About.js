@@ -9,7 +9,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">About Rita AI Ventures</h1>
-            <p className="text-xl font-body text-brand-lavender/90 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl font-sans text-white/95 max-w-4xl mx-auto leading-relaxed">
               Pioneering the future of AI-native applications with a focus on intelligent design 
               that puts artificial intelligence at the core of user experience, not as an afterthought
             </p>
