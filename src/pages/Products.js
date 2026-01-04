@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Check, Clock, Sparkles, ChefHat, ShoppingCart, Calendar, Heart, BarChart } from 'lucide-react';
+import { ExternalLink, Check, Clock, Sparkles, ChefHat, ShoppingCart, Calendar, Heart, BarChart, Youtube, Facebook, Play, Smile, Wand2 } from 'lucide-react';
 
 const Products = () => {
   return (
@@ -125,6 +125,130 @@ const Products = () => {
                     Visit SmartSpoon Website
                     <ExternalLink size={20} />
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Aria's Adventureland Section */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div className="bg-gradient-to-r from-purple-500 to-pink-600 p-8 text-white">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center text-3xl">
+                    ✨
+                  </div>
+                  <div>
+                    <h2 className="text-3xl font-sans font-bold">Aria's Adventureland</h2>
+                    <p className="text-purple-100 font-sans">Where Ordinary Becomes Extraordinary</p>
+                  </div>
+                </div>
+                <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-sans font-semibold">
+                  Live Now
+                </span>
+              </div>
+            </div>
+
+            <div className="p-8">
+              <p className="text-lg text-gray-600 mb-8">
+                Welcome to Aria's Adventure! This channel is all about stepping into the whimsical world of Aria—a place
+                where the ordinary becomes extraordinary! Join Aria as she explores all sorts of fun and quirky adventures,
+                from slicing into cakes that might just be something else entirely, to encountering giant rubber ducks on
+                the beach, and diving into all kinds of unique, adventurous scenarios.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">What to Expect</h3>
+                  <div className="flex items-start gap-3">
+                    <Play className="text-purple-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Creative Adventures</h4>
+                      <p className="text-sm text-gray-600">Unique and quirky scenarios that turn everyday moments into magic</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Smile className="text-pink-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Humor & Fun</h4>
+                      <p className="text-sm text-gray-600">A delightful blend of creativity with a sprinkle of humor</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Wand2 className="text-purple-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Unexpected Moments</h4>
+                      <p className="text-sm text-gray-600">You never know what Aria might do next!</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Sparkles className="text-pink-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Whimsical World</h4>
+                      <p className="text-sm text-gray-600">Step into a world where imagination knows no bounds</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Subscribe?</h3>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Fresh Content</h4>
+                      <p className="text-sm text-gray-600">Regular uploads of creative and entertaining adventures</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Family-Friendly</h4>
+                      <p className="text-sm text-gray-600">Wholesome entertainment for viewers of all ages</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Unique Perspective</h4>
+                      <p className="text-sm text-gray-600">Experience the world through Aria's creative lens</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Community</h4>
+                      <p className="text-sm text-gray-600">Join a growing community of adventure enthusiasts</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t pt-8">
+                <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                  <div className="flex items-center gap-4">
+                    <a
+                      href="https://www.youtube.com/@AriasAdventureland"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all hover:bg-red-700"
+                    >
+                      <Youtube size={20} />
+                      Watch on YouTube
+                    </a>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61584747545181"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all hover:bg-blue-700"
+                    >
+                      <Facebook size={20} />
+                      Follow on Facebook
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
