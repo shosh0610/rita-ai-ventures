@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Send, MessageSquare, Globe } from 'lucide-react';
+import { Mail, Send, MessageSquare, Globe, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -98,7 +98,19 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">santhosh.raman@rita-ai.com</p>
+                    <p className="text-gray-600">business@rita-ai.com</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                    <MapPin size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
+                    <p className="text-gray-600">
+                      &#51;&#51;&#48;&#49; &#50;&#52;&#49;st Ave SE, Sammamish WA &#57;&#56;&#48;&#50;&#57;
+                    </p>
                   </div>
                 </div>
 
@@ -120,7 +132,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Business Inquiries</h3>
                     <p className="text-gray-600">For partnerships and investment opportunities</p>
-                    <p className="text-gray-600">santhosh.raman@rita-ai.com</p>
+                    <p className="text-gray-600">business@rita-ai.com</p>
                   </div>
                 </div>
               </div>
