@@ -16,131 +16,15 @@ const Products = () => {
         </div>
       </section>
 
-      {/* SmartSpoon Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <div className="bg-gradient-to-r from-brand-wine to-brand-plum p-8 text-white">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center text-3xl">
-                    🍽️
-                  </div>
-                  <div>
-                    <h2 className="text-3xl font-sans font-bold">SmartSpoon</h2>
-                    <p className="text-brand-lavender/90 font-sans">Your AI-Powered Personal Chef</p>
-                  </div>
-                </div>
-                <span className="bg-brand-lavender text-brand-plum px-3 py-1 rounded-full text-sm font-sans font-semibold">
-                  Launching Soon
-                </span>
-              </div>
-            </div>
-
-            <div className="p-8">
-              <p className="text-lg text-gray-600 mb-8">
-                SmartSpoon revolutionizes meal planning with AI-powered recipe recommendations, 
-                smart grocery lists, and personalized nutrition tracking. Whether you're a cooking 
-                novice or a culinary enthusiast, SmartSpoon makes every meal an adventure.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Key Features</h3>
-                  <div className="flex items-start gap-3">
-                    <ChefHat className="text-indigo-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Thousands of Recipes</h4>
-                      <p className="text-sm text-gray-600">Access a vast library of curated recipes from around the world</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Sparkles className="text-purple-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">AI Recommendations</h4>
-                      <p className="text-sm text-gray-600">Get personalized meal suggestions based on your preferences</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <ShoppingCart className="text-indigo-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Smart Shopping Lists</h4>
-                      <p className="text-sm text-gray-600">Automatically generate grocery lists from your meal plans</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Calendar className="text-purple-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Meal Planning</h4>
-                      <p className="text-sm text-gray-600">Plan your week with intelligent scheduling and prep time estimates</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Benefits</h3>
-                  <div className="flex items-start gap-3">
-                    <Check className="text-green-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Save Time</h4>
-                      <p className="text-sm text-gray-600">Reduce meal planning from hours to minutes</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="text-green-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Eat Healthier</h4>
-                      <p className="text-sm text-gray-600">Track nutrition and discover balanced meal options</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="text-green-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Reduce Food Waste</h4>
-                      <p className="text-sm text-gray-600">Buy only what you need with precise ingredient lists</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="text-green-600 mt-1" size={20} />
-                    <div>
-                      <h4 className="font-medium">Explore New Cuisines</h4>
-                      <p className="text-sm text-gray-600">Discover recipes from different cultures and dietary styles</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="border-t pt-8">
-                <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                  <div className="flex items-center gap-2 text-gray-600">
-                    <Clock size={20} />
-                    <span>iOS App Coming Soon</span>
-                  </div>
-                  <a
-                    href="https://smartspoon.rita-ai.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all"
-                  >
-                    Visit SmartSpoon Website
-                    <ExternalLink size={20} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Aria's Adventureland Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
             <div className="bg-gradient-to-r from-purple-500 to-pink-600 p-8 text-white">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center text-3xl">
-                    ✨
+                  <div className="w-16 h-16 rounded-2xl overflow-hidden bg-white/20 backdrop-blur flex items-center justify-center">
+                    <img src="/images/aria.png" alt="Aria" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h2 className="text-3xl font-sans font-bold">Aria's Adventureland</h2>
@@ -249,6 +133,122 @@ const Products = () => {
                       Follow on Facebook
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SmartSpoon Section */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div className="bg-gradient-to-r from-brand-wine to-brand-plum p-8 text-white">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center text-3xl">
+                    🍽️
+                  </div>
+                  <div>
+                    <h2 className="text-3xl font-sans font-bold">SmartSpoon</h2>
+                    <p className="text-brand-lavender/90 font-sans">Your AI-Powered Personal Chef</p>
+                  </div>
+                </div>
+                <span className="bg-brand-lavender text-brand-plum px-3 py-1 rounded-full text-sm font-sans font-semibold">
+                  Launching Soon
+                </span>
+              </div>
+            </div>
+
+            <div className="p-8">
+              <p className="text-lg text-gray-600 mb-8">
+                SmartSpoon revolutionizes meal planning with AI-powered recipe recommendations,
+                smart grocery lists, and personalized nutrition tracking. Whether you're a cooking
+                novice or a culinary enthusiast, SmartSpoon makes every meal an adventure.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Key Features</h3>
+                  <div className="flex items-start gap-3">
+                    <ChefHat className="text-indigo-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Thousands of Recipes</h4>
+                      <p className="text-sm text-gray-600">Access a vast library of curated recipes from around the world</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Sparkles className="text-purple-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">AI Recommendations</h4>
+                      <p className="text-sm text-gray-600">Get personalized meal suggestions based on your preferences</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <ShoppingCart className="text-indigo-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Smart Shopping Lists</h4>
+                      <p className="text-sm text-gray-600">Automatically generate grocery lists from your meal plans</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Calendar className="text-purple-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Meal Planning</h4>
+                      <p className="text-sm text-gray-600">Plan your week with intelligent scheduling and prep time estimates</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Benefits</h3>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Save Time</h4>
+                      <p className="text-sm text-gray-600">Reduce meal planning from hours to minutes</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Eat Healthier</h4>
+                      <p className="text-sm text-gray-600">Track nutrition and discover balanced meal options</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Reduce Food Waste</h4>
+                      <p className="text-sm text-gray-600">Buy only what you need with precise ingredient lists</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-600 mt-1" size={20} />
+                    <div>
+                      <h4 className="font-medium">Explore New Cuisines</h4>
+                      <p className="text-sm text-gray-600">Discover recipes from different cultures and dietary styles</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t pt-8">
+                <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                  <div className="flex items-center gap-2 text-gray-600">
+                    <Clock size={20} />
+                    <span>iOS App Coming Soon</span>
+                  </div>
+                  <a
+                    href="https://smartspoon.rita-ai.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all"
+                  >
+                    Visit SmartSpoon Website
+                    <ExternalLink size={20} />
+                  </a>
                 </div>
               </div>
             </div>
